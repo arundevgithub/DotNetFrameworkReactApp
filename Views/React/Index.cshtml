@@ -3,18 +3,22 @@
     //Layout = null;
 }
 
-<!DOCTYPE html>
-
-<html>
+<!--<!DOCTYPE html>-->
+<!--<html>
 <head>
     <meta name="viewport" content="width=device-width" />
     <title>Index</title>
 </head>
-<body>
-    <div id="DivReactJS">
-    </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/18.3.1/umd/react.development.min.js" ></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/18.3.1/umd/react-dom.development.min.js" ></script>
-    <script src="@Url.Content("~/Scripts/reactapp.jsx")"></script>
-</body>
+<body>-->
+
+<div id="DivReactJS">
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/react/18.3.1/umd/react.development.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/18.3.1/umd/react-dom.development.min.js"></script>
+<!--<script src="@Url.Content("~/Scripts/mycomponent.jsx")"></script>
+<script src="@Url.Content("~/Scripts/reactapp.jsx")"></script>-->
+@Scripts.Render("~/bundles/jsx")
+
+<!--</body>-->
 </html>
