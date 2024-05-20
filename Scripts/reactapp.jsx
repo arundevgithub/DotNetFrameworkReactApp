@@ -1,8 +1,12 @@
 ﻿class ReactApp extends React.Component {
+    constructor(props) {
+        super(props);
+    }
+
     render() {
         return (
             <>
-                <h1>My React App</h1>
+                <h1>{this.props.AppName}</h1>
                 <MyComponent />
               </>
         )
@@ -16,4 +20,4 @@
 
 const container = document.getElementById('DivReactJS');
 const root = ReactDOM.createRoot(container);
-root.render(<ReactApp/>);
+root.render(<ReactApp AppName={header} />);
